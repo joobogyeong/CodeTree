@@ -8,7 +8,7 @@ def pal(A):
     else:
         return(False)
     
-if pal(A)==0:
+if pal(A)==True:
     print("Yes")
 else:
     print("No")
