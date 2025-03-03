@@ -5,7 +5,7 @@ b = list(map(int, input().split()))
 # Please write your code here.
 def func(a, b, n1, n2):
     found=False
-    for i in range(n1):
+    for i in range(n1-n2+1):
         if a[i]==b[0]:
             for j in range(n2):
                 if a[i+j]==b[j]:
