@@ -4,7 +4,7 @@ a, b = map(int, input().split())
 def fun(a,b):
     if a>b:
         a+=25
-        b*=22
+        b*=2
         return a, b
     else:
         b+=25
