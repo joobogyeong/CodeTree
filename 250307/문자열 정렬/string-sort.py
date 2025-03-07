@@ -1,3 +1,3 @@
 str=input()
-str.sorted()
-print(''.join(str))
+sorted_str=sorted(str)
+print(''.join(sorted_str))
