@@ -1,5 +1,5 @@
-A=input()
-B=input()
+A=list(input())
+B=list(input())
 A.sort()
 B.sort()
 if A==B:
