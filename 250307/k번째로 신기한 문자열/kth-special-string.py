@@ -6,7 +6,7 @@ string = [input() for _ in range(n)]
 string.sort()
 new_str=[]
 for i in range(n):
-    if t in string[i]:
+    if t in string[i][:len(t)]:
         new_str.append(string[i])
 
 print(new_str[k-1])
