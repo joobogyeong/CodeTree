@@ -1,12 +1,12 @@
 n, k, t = input().split()
 n, k = int(n), int(k)
-str = [input() for _ in range(n)]
+string = [input() for _ in range(n)]
 
 # Please write your code here.
-str.sort()
+string.sort()
 new_str=[]
 for i in range(n):
-    if t in str[i]:
-        new_str.append(str[i])
+    if t in string[i]:
+        new_str.append(string[i])
 
 print(new_str[k-1])
