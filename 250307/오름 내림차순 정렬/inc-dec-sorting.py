@@ -3,6 +3,9 @@ nums = list(map(int, input().split()))
 
 # Please write your code here.
 nums.sort()
-print(nums)
+for elem in nums:
+    print(elem, end=" ")
+
 nums.sort(reverse=True)
-print(nums)
+for elem in nums:
+    print(elem, end=" ")
