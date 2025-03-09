@@ -12,7 +12,7 @@ min_score=user[0].score
 min_user_num=0
 for i in range(1,5):
     if user[i].score<min_score:
-        min+score = user[i].score
+        min_score = user[i].score
         min_user_num=i
 
 print(f"{user[min_user_num].codename} {user[min_user_num].score}")
