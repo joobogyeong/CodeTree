@@ -8,10 +8,10 @@ for _ in range(5):
     codename, score = input().split()
     user.append(User(codename, int(score)))
 
-min=user[0].score
+min_score=user[0].score
 min_user_num=0
 for i in range(1,5):
-    if user[i].score<min:
+    if user[i].score<min_score:
         min_user_num=i
 
 print(f"{user[min_user_num].codename} {user[min_user_num].score}")
