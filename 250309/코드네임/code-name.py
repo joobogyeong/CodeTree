@@ -1,16 +1,17 @@
 class User:
-    def __init__(self, codedname=" ", score):
+    def __init__(self, codename=" ", score=0):
         self.codename = codename
         self.score = score
 
-user =[
-    tuple(map(input().split()))
-    for _ in range(5)
-]
+user = []
+for _ in range(5):
+    codename, score = input().split()
+    user.append(User(codename, int(score)))
+
 min=user[0].score
-name=""
-for i in range(1, 5):
+min_user_num=0
+for i in range(1,5):
     if user[i].score<min:
-        min=user[i].score
-        name=user[i].codename
-print(f"{name} {min}")
+        min_user_num=i
+
+print(f"{user[min_user_num].codename} {user[min_user_num].score}")
