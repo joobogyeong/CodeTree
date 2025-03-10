@@ -3,9 +3,9 @@ n=int(input())
 class Person:
     def __init__(self, name='', korean=0, english=0, math=0):
         self.name = name
-        self.korean = korean
-        self.english = english
-        self.math = math
+        self.korean = int(korean)
+        self.english = int(english)
+        self.math = int(math)
 
 people=[]
 for _ in range(n):
