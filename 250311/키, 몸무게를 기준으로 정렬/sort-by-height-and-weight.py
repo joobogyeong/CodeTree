@@ -8,8 +8,8 @@ class Human:
 human = []
 for i in range(n):
     name, h, w = tuple(input().split())
-    human.append(Human(name, int(h), w))
+    human.append(Human(name, int(h), int(w)))
 
-human.sort(key = lambda x : (-x.h, -x.w))
+human.sort(key = lambda x : (x.h, -x.w))
 for hu in human:
     print(hu.name, hu.h, hu.w)
