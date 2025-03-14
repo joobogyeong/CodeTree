@@ -1,5 +1,5 @@
-digit=list(map(int, input().split()))
+binary=list(map(int, input().strip()))
 num=0
-for i in range(len(digit)):
-    num = num*2 + digit[i]
+for i in range(len(binary)):
+    num = num*2 + binary[i]
 print(num)
