@@ -1,10 +1,10 @@
 N=int(input())
-a=[]
+arr=[]
 for _ in range(N):
-    a.append(tuple(map(int, input().split())))
-line = [0]*200
-for a,b in a:
-    for j in range(a+100, b+101):
+    arr.append(tuple(map(int, input().split())))
+line = [0]*101
+for a,b in arr:
+    for j in range(a, b+1):
         line[j]+=1
 print(max(line))
 
