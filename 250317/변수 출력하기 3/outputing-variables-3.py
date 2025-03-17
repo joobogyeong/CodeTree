@@ -1,4 +1,4 @@
 a=1
 b=2
 c='C'
-print(f"{a}a->{b}->{c}")
+print(f"{a}->{b}->{c}")
