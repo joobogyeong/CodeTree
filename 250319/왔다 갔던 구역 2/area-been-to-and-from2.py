@@ -3,8 +3,8 @@ arr=[
     tuple(input().split())
     for _ in range(N)
 ]
-result_array=[0]*10000
-current_point=500
+result_array=[0]*2000
+current_point=1000
 for i in range(N):
     if arr[i][1]=='R':
         for _ in range(int(arr[i][0])):
