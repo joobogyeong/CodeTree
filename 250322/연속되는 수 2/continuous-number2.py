@@ -12,4 +12,4 @@ for i in range(N):
         if max_cnt < cnt:
             max_cnt = cnt
             cnt=1
-print(max_cnt)
+print(max(max_cnt, cnt))
