@@ -8,7 +8,7 @@ for i in range(N):
 
     else:
         max_cnt = max(max_cnt, cnt)
-        if array[i]>3:
+        if array[i]>T:
             cnt=1
         else: cnt=0
 print(max(max_cnt, cnt))
