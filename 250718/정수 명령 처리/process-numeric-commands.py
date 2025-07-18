@@ -31,10 +31,10 @@ s = Stack()
 for _ in range(n):
     command = input()
     
-    if command[0]=="push":
+    if command.startswith("push"):
         x = int(command.split()[1])
         s.push(x)
-    elif command[0]=="pop":
+    elif command.startswith("pop"):
         print(s.pop())
     elif command == "size":
         print(s.size())
