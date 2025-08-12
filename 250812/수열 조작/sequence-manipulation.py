@@ -2,7 +2,7 @@ from collections import deque
 n=int(input())
 dq=deque()
 
-for 1 in range(n+1):
+for i in range(1, n+1):
     dq.append(i)
 
 for _ in range(n-1):
@@ -10,7 +10,7 @@ for _ in range(n-1):
     x=dq.popleft()
     dq.append(x)
 
-print(dq)
+print(dq.pop())
 
 
 
