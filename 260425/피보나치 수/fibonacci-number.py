@@ -1,5 +1,5 @@
 N = int(input())
-memo = [-1]*
+memo = [-1]*N
 
 def fibo(n):
     if memo[n]!=-1:
