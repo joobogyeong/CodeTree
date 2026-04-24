@@ -27,7 +27,7 @@ def bfs():
 
 for x, y in start_point:
     x-=1
-    y-=
+    y-=1
 
     if can_go(x, y):
         visited[x][y]=True
