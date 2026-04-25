@@ -12,4 +12,4 @@ def dp(n):
         memo[n]=dp(n-1)+dp(n-2)
     return memo[n]
 
-print(dp(N))
+print(dp(N)%10007)
