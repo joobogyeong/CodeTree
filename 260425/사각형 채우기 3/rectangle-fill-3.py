@@ -8,6 +8,8 @@ def dp(n):
         memo[n]=2
     elif n==2:
         memo[n]=7
+    elif n==3:
+        memo[n]=22    
     else:
         memo[n]=2*(dp(n-1))+3*(dp(n-2))+2*(dp(n-3))
     return memo[n]
