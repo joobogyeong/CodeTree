@@ -11,6 +11,6 @@ for i in range(N):
 
 for elem in cmd:
     if elem not in d:
-        print(0)
+        print(0, end=" ")
     else:
         print(d[elem], end=" ")
