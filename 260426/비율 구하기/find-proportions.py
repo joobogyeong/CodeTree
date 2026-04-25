@@ -10,4 +10,4 @@ for _ in range(N):
         sd[color]+=1
 
 for color, num in sd.items():
-    print(f"{color} {100//N*num:.4f}")
+    print(f"{color} {100/N*num:.4f}")
