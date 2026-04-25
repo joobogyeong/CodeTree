@@ -3,7 +3,7 @@ from collections import deque
 N, M = map(int, input().split())
 grid = [list(map(int, input().split())) for _ in range(N)]
 visited = [[False]*M for _ in range(N)]
-step = [[0]*M for _ in range(N)]
+step = [[-1]*M for _ in range(N)]
 dx = [1, 0, -1, 0]
 dy = [0, -1, 0, 1]
 q = deque()
@@ -33,5 +33,6 @@ def bfs(x, y):
                 q.append((new_x, new_y))
 
 visited[0][0]=True
+step[0][0]=0
 bfs(0, 0)
 print(step[M-1][N-1])
