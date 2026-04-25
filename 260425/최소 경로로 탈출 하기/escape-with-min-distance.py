@@ -35,4 +35,4 @@ def bfs(x, y):
 visited[0][0]=True
 step[0][0]=0
 bfs(0, 0)
-print(step[M-1][N-1])
+print(step[N-1][M-1])
