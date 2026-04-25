@@ -1,17 +1,20 @@
-N = int(input())
-memo = [-1] * (N+1)
+MOD = 1000000007
 
-def dp(n):
-    if memo[n]!=-1:
-        return memo[n]
-    elif n==1:
-        memo[n]=2
-    elif n==2:
-        memo[n]=7
-    elif n==3:
-        memo[n]=22    
-    else:
-        memo[n]=2*(dp(n-1))+3*(dp(n-2))+2*(dp(n-3))
-    return memo[n]
+# 변수 선언 및 입력:
+n = int(input())
 
-print(dp(N)%1000000007)
+dp = [0] * (n + 1)
+
+# 초기 조건 설정
+dp[0] = 1
+dp[1] = 2
+
+# 점화식에 따라 dp값 채우기
+# dp[i] = dp[i - 1] * 2 + dp[i - 2] * 3 +
+#         (dp[i - 3] + dp[i - 4] + dp[i - 5] + ... dp[0]) * 2
+for i in range(2, n + 1):
+    dp[i] = (dp[i - 1] * 2 + dp[i - 2] * 3) % MOD
+    for j in range(i - 3, -1, -1):
+        dp[i] = (dp[i] + dp[j] * 2) % MOD
+
+print(dp[n])
